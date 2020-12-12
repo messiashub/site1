@@ -9,7 +9,15 @@
     color:white; 
     padding-top: 80px;
 }
-
+footer{
+    background-color: #4684c1;
+}
+footer a{
+    color: yellow;
+}
+footer a:hover{
+    color:white
+}
 .linhaI{
     border: 1px solid red;
     
