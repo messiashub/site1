@@ -1,3 +1,8 @@
+body *{
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,255, 0.1);
+
+}
+
 .inicio{
     background-color: rgb(210,210,230);
     padding-top: 120px;
@@ -18,9 +23,9 @@ footer a{
 footer a:hover{
     color:white
 }
-.linhaI{
+/* .linhaI{
     border: 1px solid red;
     
 }
-
+ */
 

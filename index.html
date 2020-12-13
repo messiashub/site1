@@ -41,25 +41,6 @@
     </nav>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- inicio -->
     <section class="container-fluid inicio" id="inicio">
         <div class="row pt-5 pb-5">
@@ -90,11 +71,13 @@
                 <!-- coluna de 6 enquanto que sm, menor que sm 1 linha com 12 (total 12 nessa linha) -->
                 <img src="/assets/images/icon_mecanica.png" alt="Mecânica Automóvel">
                 <h3>Todos os trabalhos de mecânica</h3>
-                <p class="text-sm-left">Lorem ipsum dolor sit amen consenter adipisicing elite. Maxime voluptates dicta,
+                <div>
+                <p class="text-sm-left ">Lorem ipsum dolor sit amen consenter adipisicing elite. Maxime voluptates dicta,
                     commove aperuam in aut sed nesciunt nisi, consenter seque consequente erram consecrator parum, tomam
                     tossimos! Doloqué consenter sit digníssima.Lorem ipsum dolor sit amer connecter adipisicing elite.
                     Maxime voluptates dicta, commove apreiam in aut sed nesciunt nisi, connecter sequio consequente
                     reuma consecrator larum, tocam possamos! Doloqué consenter sit digníssimas.</p>
+                </div>
 
             </div>
             <div class="col-sm-6 col-12 linhaI text-center p-3">
@@ -149,7 +132,7 @@
         <div class="row">
             <div class="col-sm-6  p-sm-5 p-3  text-sm-left text-center">
                 <!-- Coluna de 6,texto à esquerda e padding 5 enquanto maior de sm -->
-                Minha Empresa &copy;2020
+                Minha Empresa &copy;<span id="ano"></span>
             </div>
             <div class="col-sm-6  p-sm-5  p-2  text-sm-right text-center">
                 <!-- Coluna de 6, texto à direita e padding 5 enquanto maior de sm -->
@@ -158,8 +141,13 @@
         </div>
     </footer>
 
+    <script>
+        // Colocando ano dinâmicamente js no footer
+        let data = new Date();
+        let ano= data.getFullYear();
+        document.getElementById('ano').innerHTML=ano;
 
-
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
