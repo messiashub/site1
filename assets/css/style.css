@@ -1,6 +1,9 @@
-body *{
+body *{                          /* Técnica para olhar a posição dos elementos na tela */
     box-shadow: inset 0px 0px 0px 1px rgba(0,0,255, 0.1);
 
+}
+html{
+    scroll-behavior: smooth;  /* Scroll suave */
 }
 
 .inicio{
